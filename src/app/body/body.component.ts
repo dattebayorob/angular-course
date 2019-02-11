@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OffersService } from '../offers.service';
+import { Offer } from '../shared/offer.model';
 
 @Component({
   selector: 'app-body',
@@ -11,12 +12,14 @@ export class BodyComponent implements OnInit {
 
   private offersService: OffersService;
 
+  public offers: Array<Offer>;
+
   constructor(offersService: OffersService) {
     this.offersService = offersService;
   }
 
   ngOnInit() {
-    console.log(this.offersService.getOffers());
+    this.offers = this.offersService.getOffers();
   }
 
 }
