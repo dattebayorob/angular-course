@@ -19,7 +19,12 @@ export class BodyComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.offers = this.offersService.getOffers();
+    this.offersService.getOffers().
+      then(
+        (offers: Array<Offer>) => {this.offers = offers},
+      ).catch(
+        (error: any) => {console.log(error)}
+      );
   }
 
 }
