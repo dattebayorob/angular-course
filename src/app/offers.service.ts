@@ -1,5 +1,4 @@
 import { Offer } from './shared/offer.model'
-import { reject } from 'q';
 
 export class OffersService{
     public offers: Array<Offer> = [
@@ -56,14 +55,24 @@ export class OffersService{
     public getOffers(): Promise<Array<Offer>> {
         return new Promise((resolve,reject) => {
             // just a test
-            let works = false;
+            let works = true;
             if(works){
                 setTimeout(() => resolve(this.offers), 3000);
             }else{
                 reject({errorCode: 404, errorMessage: 'Deu ruim'});
             }
-        }
-        )
+        }).then((offers : Array<Offer>) =>{
+            console.log('Primeiro then');
+            return offers;
+        }).then((offers : Array<Offer>)=>{
+            console.log('Segundo then');
+            return new Promise((res,rej)=>{
+                setTimeout(() => {res(offers)},3000);
+            });
+        }).then((offers: Array<Offer>)=>{
+            console.log('Terceiro then');
+            return offers;
+        })
         
         
     }
