@@ -1,0 +1,80 @@
+{
+ "offers": [
+    {
+        "id": 1,
+        "cattegory": "restaurante",
+        "title": "Super Burger",
+        "description": "Rodízio de Mini-hambúrger com opção de entrada.",
+        "advertiser": "Original Burger",
+        "value": 29.90,
+        "spotlight": true,
+        "images": [
+            {"url": "/assets/offers/1/img1.jpg"},
+            {"url": "/assets/offers/1/img2.jpg"},
+            {"url": "/assets/offers/1/img3.jpg"},
+            {"url": "/assets/offers/1/img4.jpg"}
+        ]
+    },
+    {
+        "id": 2,
+        "cattegory": "restaurante",
+        "title": "Cozinha Mexicana",
+        "description": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+        "advertiser": "Mexicana",
+        "value": 32.90,
+        "spotlight": true,
+        "images": [
+            {"url": "/assets/offers/2/img1.jpg"},
+            {"url": "/assets/offers/2/img2.jpg"},
+            {"url": "/assets/offers/2/img3.jpg"},
+            {"url": "/assets/offers/2/img4.jpg"}
+        ]
+    
+    },
+    {
+        "id": 3,
+        "cattegory": "diversao",
+        "title": "Estância das águas",
+        "description": "Diversão garantida com piscinas, trilhas e muito mais.",
+        "advertiser": "Estância das águas",
+        "value": 31.90,
+        "spotlight": true,
+        "images": [
+            {"url": "/assets/offers/3/img1.jpg"},
+            {"url": "/assets/offers/3/img2.jpg"},
+            {"url": "/assets/offers/3/img3.jpg"},
+            {"url": "/assets/offers/3/img4.jpg"}
+        ]
+    },
+    {
+        "id": 4,
+        "cattegory": "diversao",
+        "title": "Estância das águas",
+        "description": "Diversão garantida com piscinas, trilhas e muito mais.",
+        "advertiser": "Estância das águas",
+        "value": 31.90,
+        "spotlight": true,
+        "images": [
+            {"url": "/assets/offers/4/img1.jpg"},
+            {"url": "/assets/offers/4/img2.jpg"},
+            {"url": "/assets/offers/4/img3.jpg"},
+            {"url": "/assets/offers/4/img4.jpg"},
+            {"url": "/assets/offers/4/img5.jpg"},
+            {"url": "/assets/offers/4/img6.jpg"}
+        ]
+    },
+    {
+        "id": 5,
+        "cattegory": "diversao",
+        "title": "Estância das águas",
+        "description": "Diversão garantida com piscinas, trilhas e muito mais.",
+        "advertiser": "Estância das águas",
+        "value": 1.90,
+        "spotlight": true,
+        "images": [
+            {"url": "/assets/offers/5/img1.jpg"},
+            {"url": "/assets/offers/5/img2.jpg"}
+        ]
+    }
+]
+}
