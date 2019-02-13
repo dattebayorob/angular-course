@@ -8,31 +8,16 @@
   <hr />
 
   <div class="row">
-    <div class="col-md-4">
-      <img src="/assets/offers/1/img1.jpg" />
-    </div>
-
-    <div class="col-md-8">
-      <div class="row">
-        <h4>Super Burger</h4>
-      </div>
-
-      <div class="row">
-        <h5>Rodízio de Mini-hambúrger com opção de entrada.</h5>
-      </div>
-
-      <div class="row">
-        <p>Anunciado por: <b>Original Burger</b></p>
-      </div>
-
-      <div class="row">
-        <p>R$ 29,90</p>
-      </div>
-
-      <div class="row">
-        <button class="btn btn-outline-success">Ver oferta</button>
+    <div class="col-sm-4" *ngFor="let offer of offers">
+      <div class="card">
+        <img class="card-img-top" [src]="offer.images[0].url">
+        <div class="card-block">
+          <h4 class="card-title">{{offer.title}}</h4>
+          <p class="card-text">{{offer.description}}</p>
+          <p class="preco">R$ {{offer.value}}</p>
+          <a href="#" class="btn btn-outline-primary">Ver oferta</a>
+        </div>
       </div>
     </div>
-  </div>
 
 </div>
