@@ -11,6 +11,7 @@ import { BodyComponent } from './body/body.component';
 import { HeaderComponent } from './header/header.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { FunComponent } from './fun/fun.component';
+import { OffersGridComponent } from './offers-grid/offers-grid.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FunComponent } from './fun/fun.component';
     BodyComponent,
     HeaderComponent,
     RestaurantComponent,
-    FunComponent
+    FunComponent,
+    OffersGridComponent
   ],
   imports: [
     BrowserModule,
