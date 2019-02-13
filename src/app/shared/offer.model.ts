@@ -1,6 +1,6 @@
 export class Offer{
 		public id: number;
-		public cattegory: string;
+		public category: string;
 		public title: string;
 		public description: string;
 		public advertiser: string;

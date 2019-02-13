@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { FunComponent } from './fun/fun.component';
 import { OffersGridComponent } from './offers-grid/offers-grid.component';
+import { OfferComponent } from './offer/offer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OffersGridComponent } from './offers-grid/offers-grid.component';
     HeaderComponent,
     RestaurantComponent,
     FunComponent,
-    OffersGridComponent
+    OffersGridComponent,
+    OfferComponent
   ],
   imports: [
     BrowserModule,
