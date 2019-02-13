@@ -22,7 +22,7 @@
         "description": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
         "advertiser": "Mexicana",
         "value": 32.90,
-        "spotlight": true,
+        "spotlight": false,
         "images": [
             {"url": "/assets/offers/2/img1.jpg"},
             {"url": "/assets/offers/2/img2.jpg"},
@@ -53,7 +53,7 @@
         "description": "Diversão garantida com piscinas, trilhas e muito mais.",
         "advertiser": "Estância das águas",
         "value": 31.90,
-        "spotlight": true,
+        "spotlight": false,
         "images": [
             {"url": "/assets/offers/4/img1.jpg"},
             {"url": "/assets/offers/4/img2.jpg"},
