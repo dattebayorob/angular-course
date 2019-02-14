@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="offer">
+  <div class="offer" *ngIf="offer !== undefined">
 
     <div class="row">
       <div class="col">
@@ -29,7 +29,7 @@
 
         <div class="row">
           <div class="col text-center">
-            <h1>R$ 29,90</h1>
+            <h1>R$ {{offer.value}}</h1>
           </div>
         </div>
 

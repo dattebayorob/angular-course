@@ -12,14 +12,12 @@ import { ActivatedRoute } from '@angular/router';
 export class OfferComponent implements OnInit {
   
 
-  public id:number;
   public offer: Offer;
 
-  constructor(private offersService: OffersService,private route: ActivatedRoute) { }
+  constructor(private offersService: OffersService,private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.id = this.route.snapshot.params['id'];
-    this.offersService.getOfferById(this.id).then((offer:Offer)=> {
+    this.offersService.getOfferById(this.route.snapshot.params['id']).then((offer:Offer)=> {
       this.offer = offer;
     });
   }
