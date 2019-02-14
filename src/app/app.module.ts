@@ -13,6 +13,8 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
 import { FunComponent } from './fun/fun.component';
 import { OffersGridComponent } from './offers-grid/offers-grid.component';
 import { OfferComponent } from './offer/offer.component';
+import { HowComponent } from './offer/how/how.component';
+import { WhereComponent } from './offer/where/where.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { OfferComponent } from './offer/offer.component';
     RestaurantComponent,
     FunComponent,
     OffersGridComponent,
-    OfferComponent
+    OfferComponent,
+    HowComponent,
+    WhereComponent
   ],
   imports: [
     BrowserModule,
